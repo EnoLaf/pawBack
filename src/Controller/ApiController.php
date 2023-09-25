@@ -181,7 +181,7 @@ class ApiController extends AbstractController
         $dob    = $data['dob'];
         $gender = $data['gender'];
         $color  = Utils::cleanInput($data['color']);
-        $idChip = Utils::cleanInput($data['idChip']);
+        $idChip = intval(Utils::cleanInput($data['idChip']));
         $weight = Utils::cleanInput($data['weight']);
         $medicalHistory = Utils::cleanInput($data['medicalHistory']);
         $sterelisation = $data['sterelisation'];
